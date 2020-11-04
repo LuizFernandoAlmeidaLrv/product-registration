@@ -1,0 +1,10 @@
+<ConfiguracaoDB>
+  <sgdb>PostgreSQL</sgdb>
+  <endereco>192.168.0.53</endereco>
+  <porta>5432</porta>
+  <bancoDados>martinello</bancoDados>
+  <usuario>sistema</usuario>
+  <senha>XEYr42M2ca1YtzNK7HE55A==</senha>
+  <mostrarSQL>true</mostrarSQL>
+  <criarTabelas>none</criarTabelas>
+</ConfiguracaoDB>

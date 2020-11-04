@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+  <Properties>
+    <Property name="closable" type="boolean" value="true"/>
+    <Property name="iconifiable" type="boolean" value="true"/>
+    <Property name="title" type="java.lang.String" value="Gerenciamento de Menus"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="jpMenus" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jpDadosMenu" max="32767" attributes="0"/>
+          </Group>
+          <Component id="jpsStatus" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jpMenus" max="32767" attributes="0"/>
+                  <Component id="jpDadosMenu" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jpsStatus" min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jpMenus">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Menus">
+              <Connection PropertyName="font" code="ConstantesGlobais.FONTE_BORDA_JPANEL" type="code"/>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jspMenus" min="-2" pref="327" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jbNovoMenu" min="-2" pref="90" max="-2" attributes="0"/>
+                      <Component id="jbAlterarMenu" min="-2" pref="90" max="-2" attributes="0"/>
+                      <Component id="jbRemoverMenu" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
+                      <Component id="jbSubirMenu" min="-2" pref="90" max="-2" attributes="0"/>
+                      <Component id="jbDescerMenu" min="-2" pref="90" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="jspMenus" pref="515" max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <Component id="jbNovoMenu" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jbAlterarMenu" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jbRemoverMenu" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jbSubirMenu" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jbDescerMenu" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jspMenus">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTree" name="jtMenus">
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jtMenusMouseClicked"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="br.com.martinello.componentesbasicos.Botao" name="jbNovoMenu">
+          <Properties>
+            <Property name="mnemonic" type="int" value="110"/>
+            <Property name="text" type="java.lang.String" value="Novo"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbNovoMenuActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Botao" name="jbAlterarMenu">
+          <Properties>
+            <Property name="mnemonic" type="int" value="97"/>
+            <Property name="text" type="java.lang.String" value="Alterar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbAlterarMenuActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Botao" name="jbRemoverMenu">
+          <Properties>
+            <Property name="mnemonic" type="int" value="114"/>
+            <Property name="text" type="java.lang.String" value="Remover"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbRemoverMenuActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Botao" name="jbSubirMenu">
+          <Properties>
+            <Property name="mnemonic" type="int" value="117"/>
+            <Property name="text" type="java.lang.String" value="Subir"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbSubirMenuActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Botao" name="jbDescerMenu">
+          <Properties>
+            <Property name="mnemonic" type="int" value="100"/>
+            <Property name="text" type="java.lang.String" value="Descer"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbDescerMenuActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jpDadosMenu">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Dados">
+              <Connection PropertyName="font" code="ConstantesGlobais.FONTE_BORDA_JPANEL" type="code"/>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="rTela" linkSize="1" min="-2" pref="80" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="csTela" pref="301" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="rNomeSGL" linkSize="1" min="-2" pref="80" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="csNomeSGL" pref="301" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="jbSalvarMenu" min="-2" pref="90" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jbCancelarMenu" min="-2" pref="90" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="rDescricao" linkSize="1" min="-2" pref="80" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="csDescricao" pref="301" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="rRotulo" linkSize="1" min="-2" pref="80" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="csRotulo" pref="301" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="rMenu" linkSize="1" min="-2" pref="80" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="csMenu" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="rPacote" min="-2" pref="80" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="csPacote" pref="301" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="rTipo" linkSize="1" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="clTipo" min="-2" pref="103" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="rTipoExecucao" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="clTipoExecucao" min="-2" pref="103" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="rTipo" linkSize="2" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="clTipo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="csMenu" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="rMenu" linkSize="2" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="csRotulo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="rRotulo" linkSize="2" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="csDescricao" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="rDescricao" linkSize="2" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="rTipoExecucao" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="clTipoExecucao" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="rPacote" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="csPacote" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="rTela" linkSize="2" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="csTela" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="rNomeSGL" linkSize="2" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="csNomeSGL" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jbSalvarMenu" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jbCancelarMenu" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="273" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rMenu">
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rRotulo">
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rTipo">
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rDescricao">
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rTela">
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rNomeSGL">
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.CampoString" name="csMenu">
+          <Properties>
+            <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="rMenu"/>
+            </Property>
+            <Property name="descricaoRotulo" type="java.lang.String" value="Menu"/>
+            <Property name="obrigatorio" type="boolean" value="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="csMenuFocusLost"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoString(Menu.class, &quot;menu&quot;)"/>
+          </AuxValues>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.CampoString" name="csRotulo">
+          <Properties>
+            <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="rRotulo"/>
+            </Property>
+            <Property name="descricaoRotulo" type="java.lang.String" value="R&#xf3;tulo"/>
+            <Property name="obrigatorio" type="boolean" value="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoString(Menu.class, &quot;rotulo&quot;)"/>
+          </AuxValues>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.CampoString" name="csDescricao">
+          <Properties>
+            <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="rDescricao"/>
+            </Property>
+            <Property name="descricaoRotulo" type="java.lang.String" value="Descri&#xe7;&#xe3;o"/>
+            <Property name="obrigatorio" type="boolean" value="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoString(Menu.class, &quot;descricao&quot;)"/>
+          </AuxValues>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.CampoString" name="csTela">
+          <Properties>
+            <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="rTela"/>
+            </Property>
+            <Property name="descricaoRotulo" type="java.lang.String" value="Tela"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoString(Menu.class, &quot;tela&quot;)"/>
+          </AuxValues>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.CampoString" name="csNomeSGL">
+          <Properties>
+            <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="rNomeSGL"/>
+            </Property>
+            <Property name="descricaoRotulo" type="java.lang.String" value="Nome SGL"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoString(Menu.class, &quot;nomeSGL&quot;)"/>
+          </AuxValues>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.CampoListaSimples" name="clTipo">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="2">
+                <StringItem index="0" value="Menu"/>
+                <StringItem index="1" value="ItemMenu"/>
+              </StringArray>
+            </Property>
+            <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="rTipo"/>
+            </Property>
+            <Property name="descricaoRotulo" type="java.lang.String" value="Tipo"/>
+            <Property name="obrigatorio" type="boolean" value="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="clTipoItemStateChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoListaSimples(Menu.class, &quot;tipo&quot;)"/>
+          </AuxValues>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Botao" name="jbSalvarMenu">
+          <Properties>
+            <Property name="mnemonic" type="int" value="115"/>
+            <Property name="text" type="java.lang.String" value="Salvar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbSalvarMenuActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Botao" name="jbCancelarMenu">
+          <Properties>
+            <Property name="mnemonic" type="int" value="99"/>
+            <Property name="text" type="java.lang.String" value="Cancelar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbCancelarMenuActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rPacote">
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.CampoString" name="csPacote">
+          <Properties>
+            <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="rPacote"/>
+            </Property>
+            <Property name="descricaoRotulo" type="java.lang.String" value="Pacote"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoString(Menu.class, &quot;tela&quot;)"/>
+          </AuxValues>
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rTipoExecucao">
+        </Component>
+        <Component class="br.com.martinello.componentesbasicos.CampoListaSimples" name="clTipoExecucao">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="2">
+                <StringItem index="0" value="NovaInstancia"/>
+                <StringItem index="1" value="M&#xe9;todo"/>
+              </StringArray>
+            </Property>
+            <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="rTipoExecucao"/>
+            </Property>
+            <Property name="descricaoRotulo" type="java.lang.String" value="Tipo Exec."/>
+            <Property name="obrigatorio" type="boolean" value="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="clTipoExecucaoItemStateChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoListaSimples(Menu.class, &quot;tipo&quot;)"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="br.com.martinello.componentesbasicos.paineis.JPStatus" name="jpsStatus">
+    </Component>
+  </SubComponents>
+</Form>

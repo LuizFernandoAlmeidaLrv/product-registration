@@ -1,0 +1,12 @@
+<ConfiguracaoDB>
+  <sgdb>Oracle</sgdb>
+  <endereco>192.168.0.68</endereco>
+  <porta>1521</porta>
+  <bancoDados>dbteste</bancoDados>
+  <usuario>integracaofl</usuario>
+  <senha>bKUveE5nHs1quqyN6WpVpQ==</senha>
+  <mostrarSQL>false</mostrarSQL>
+  <criarTabelas>none</criarTabelas>
+  <tablespaceData></tablespaceData>
+  <tablespaceIndex></tablespaceIndex>
+</ConfiguracaoDB>

@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="bgUnico">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="closable" type="boolean" value="true"/>
+    <Property name="iconifiable" type="boolean" value="true"/>
+    <Property name="maximizable" type="boolean" value="true"/>
+    <Property name="resizable" type="boolean" value="true"/>
+    <Property name="title" type="java.lang.String" value="Cadastro Itens Categoria"/>
+    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1600, 900]"/>
+    </Property>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1600, 900]"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,-124,0,0,6,64"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+  <SubComponents>
+    <Component class="br.com.martinello.matriz.componentesbasicos.paineis.JPStatus" name="jpsSubCategoria">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="South"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelAba" name="paSubCategoria">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppConsultaSubCat">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Consulta">
+                <Property name="tabTitle" type="java.lang.String" value="Consulta"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+          <SubComponents>
+            <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelAba" name="paCaracteristica">
+              <Properties>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[605, 330]"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="South"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppSubTabCaracteristicas">
+                  <Properties>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[600, 320]"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Caracteristicas">
+                        <Property name="tabTitle" type="java.lang.String" value="Caracteristicas"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="Center"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.TabelaPadrao" name="tpSubTabCaracteristicas">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                              <Connection code="otmCaracteristica" type="code"/>
+                            </Property>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tpSubTabCaracteristicasMouseClicked"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rMargeConsultaCar">
+                      <Properties>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[5, 2]"/>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="West"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppSubCarItens">
+                  <Properties>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[600, 360]"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Caracteristicas Itens">
+                        <Property name="tabTitle" type="java.lang.String" value="Caracteristicas Itens"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="Center"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.TabelaPadrao" name="tpSubCarItens">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                              <Connection code="otmCaracteristicaItem" type="code"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppFiltroConsultaSubCat">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Filtros da pesquisa"/>
+                  </Border>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1029, 140]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1029, 140]"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="North"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="rIdSubCatFiltro" min="-2" pref="105" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="ciIdSubCatFiltro" min="-2" pref="105" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="rCatFiltro" min="-2" pref="105" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="clsCatFiltro" alignment="1" min="-2" pref="261" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="1" attributes="0">
+                                                      <Component id="rStatusSubCatFiltro" min="-2" pref="105" max="-2" attributes="0"/>
+                                                      <Component id="rSubCatFiltro" min="-2" pref="105" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="cscSubCatFiltro" alignment="0" min="-2" pref="261" max="-2" attributes="0"/>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Component id="jrbAtivoSubCatFiltro" min="-2" pref="100" max="-2" attributes="0"/>
+                                                          <EmptySpace max="-2" attributes="0"/>
+                                                          <Component id="jrbInativoSubCatFiltro" min="-2" pref="100" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace pref="820" max="32767" attributes="0"/>
+                                          <Component id="btPesquisarSubCat" min="-2" pref="115" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="btAlterarSubCat" min="-2" pref="115" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="btIncluirSubCat" min="-2" pref="115" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="btRelatorio" min="-2" pref="115" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="btExcluirSubCat" min="-2" pref="115" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="rIdSubCatFiltro" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="ciIdSubCatFiltro" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="rCatFiltro" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="clsCatFiltro" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="rSubCatFiltro" min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="cscSubCatFiltro" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="rStatusSubCatFiltro" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="jrbAtivoSubCatFiltro" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="jrbInativoSubCatFiltro" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="btAlterarSubCat" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="btIncluirSubCat" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="btPesquisarSubCat" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="btExcluirSubCat" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="btRelatorio" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="2" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rIdSubCatFiltro">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="C&#xf3;digo:"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rSubCatFiltro">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="SubCategoria:"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.CampoInteiro" name="ciIdSubCatFiltro">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="0"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.consulta.CampoStringConsulta" name="cscSubCatFiltro">
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rStatusSubCatFiltro">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Status:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="jrbAtivoSubCatFiltro">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ativo"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="jrbInativoSubCatFiltro">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Inativo"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btPesquisarSubCat">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Pesquisar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btPesquisarSubCatActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btAlterarSubCat">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Alterar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btAlterarSubCatActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btIncluirSubCat">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Incluir"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btIncluirSubCatActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btExcluirSubCat">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Excluir"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btExcluirSubCatActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rCatFiltro">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Categoria:"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.CampoListaSimples" name="clsCatFiltro">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clsCatFiltroActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btRelatorio">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Imprimir"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btRelatorioActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppTabConsultaSubCat">
+              <Properties>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1029, 120]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1029, 450]"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="Center"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="jspTabConsultaSubCat">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="Center"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.TabelaPadrao" name="tpConsultaSubCat">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection code="otmSubCategoria" type="code"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tpConsultaSubCatKeyPressed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rMargemConsultaSub">
+                  <Properties>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[5, 15]"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="Before"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppCadastroSubCat">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[1024, 500]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Cadastro / Altera&#xe7;&#xe3;o">
+                <Property name="tabTitle" type="java.lang.String" value="Cadastro / Altera&#xe7;&#xe3;o"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+          <SubComponents>
+            <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppCadastroSubCat1">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Filtros da pesquisa"/>
+                  </Border>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1029, 170]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1029, 170]"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="Center"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="rIdSubCatCadastro" min="-2" pref="105" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="ciIdSubCatCad" min="-2" pref="105" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="rStatusSubCatCad" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
+                                              <Component id="rSubCatCadastro" alignment="1" min="-2" pref="105" max="-2" attributes="0"/>
+                                              <Component id="rObsSubCatCad" alignment="1" min="-2" pref="105" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="csSubCatCad" alignment="0" min="-2" pref="256" max="-2" attributes="0"/>
+                                              <Component id="jspDescSubCatCad" min="-2" pref="400" max="-2" attributes="0"/>
+                                              <Component id="clsSituacaoSubCatCad" min="-2" pref="105" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="rCatCad" min="-2" pref="105" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="clsCatCad" min="-2" pref="256" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace pref="1048" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btCancelarSubCatCad" min="-2" pref="105" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="btSalvarSubCatCad" min="-2" pref="105" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="547" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="rIdSubCatCadastro" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="ciIdSubCatCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="rCatCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="clsCatCad" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="rSubCatCadastro" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="csSubCatCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="rStatusSubCatCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="clsSituacaoSubCatCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jspDescSubCatCad" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="rObsSubCatCad" alignment="0" min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="567" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btCancelarSubCatCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="btSalvarSubCatCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rIdSubCatCadastro">
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rSubCatCadastro">
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.CampoInteiro" name="ciIdSubCatCad">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" value="0"/>
+                    <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                      <ComponentRef name="rIdSubCatCadastro"/>
+                    </Property>
+                    <Property name="descricaoRotulo" type="java.lang.String" value="C&#xf3;digo"/>
+                    <Property name="obrigatorio" type="boolean" value="true"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rStatusSubCatCad">
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btCancelarSubCatCad">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Cancelar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCancelarSubCatCadActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btSalvarSubCatCad">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Salvar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btSalvarSubCatCadActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rObsSubCatCad">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Observa&#xe7;&#xe3;o:"/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jspDescSubCatCad">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="jtaObservacao">
+                      <Properties>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection code="new FixedLengthDocument(125&#xa;)" type="code"/>
+                        </Property>
+                        <Property name="rows" type="int" value="5"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="br.com.martinello.matriz.componentesbasicos.CampoString" name="csSubCatCad">
+                  <Properties>
+                    <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                      <ComponentRef name="rSubCatCadastro"/>
+                    </Property>
+                    <Property name="descricaoRotulo" type="java.lang.String" value="Descri&#xe7;&#xe3;o"/>
+                    <Property name="obrigatorio" type="boolean" value="true"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.CampoListaSimples" name="clsSituacaoSubCatCad">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="3">
+                        <StringItem index="0" value="Ativo"/>
+                        <StringItem index="1" value="Inativo"/>
+                        <StringItem index="2" value=""/>
+                      </StringArray>
+                    </Property>
+                    <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                      <ComponentRef name="rStatusSubCatCad"/>
+                    </Property>
+                    <Property name="descricaoRotulo" type="java.lang.String" value="Situa&#xe7;&#xe3;o"/>
+                    <Property name="obrigatorio" type="boolean" value="true"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.CampoListaSimples" name="clsCatCad">
+                  <Properties>
+                    <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                      <ComponentRef name="rCatCad"/>
+                    </Property>
+                    <Property name="descricaoRotulo" type="java.lang.String" value="Categoria"/>
+                    <Property name="obrigatorio" type="boolean" value="true"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rCatCad">
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppCadCaracteristica">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[1024, 500]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Caracteristicas">
+                <Property name="tabTitle" type="java.lang.String" value="Caracteristicas"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+          <SubComponents>
+            <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="painelPadrao3">
+              <Properties>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[100, 40]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1300, 40]"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="South"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="493" max="-2" attributes="0"/>
+                          <Component id="btSalvarCarCad2" min="-2" pref="105" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btCancelarCarCad2" min="-2" pref="105" max="-2" attributes="0"/>
+                          <EmptySpace pref="870" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btCancelarCarCad2" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="btSalvarCarCad2" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btSalvarCarCad2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Salvar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btSalvarCarCad2ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btCancelarCarCad2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Cancelar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCancelarCarCad2ActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppPrincCaractItem">
+              <Properties>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1300, 300]"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="Center"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+              <SubComponents>
+                <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppCadastroCaracteristicaItem">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder position="1" title="Caracterist&#xed;cas Itens"/>
+                      </Border>
+                    </Property>
+                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[1029, 150]"/>
+                    </Property>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[1029, 110]"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="North"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="rStatusCarCadItem" min="-2" pref="105" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="clsSituacaoCarCadItem" min="-2" pref="111" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="rVisivelCadItem" min="-2" pref="105" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="clsVisivelCarCadItem" min="-2" pref="111" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="rReplicavelCadItem" min="-2" pref="105" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="clsReplicavelCarCadItem" min="-2" pref="111" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="rObsCarCadItem" min="-2" pref="105" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="csObsCarItemCad" pref="670" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="rCarItemCadastroItem" min="-2" pref="105" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="csCarItemCadItem" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="673" pref="778" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rCarItemCadastroItem" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="csCarItemCadItem" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rObsCarCadItem" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="csObsCarItemCad" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="rVisivelCadItem" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="clsVisivelCarCadItem" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="rStatusCarCadItem" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="clsSituacaoCarCadItem" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="rReplicavelCadItem" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="clsReplicavelCarCadItem" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace pref="38" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rObsCarCadItem">
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rCarItemCadastroItem">
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.CampoString" name="csCarItemCadItem">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rCarItemCadastroItem"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Descri&#xe7;&#xe3;o"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                        <Property name="qtdMaxCaracteres" type="int" value="100"/>
+                      </Properties>
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.CampoListaSimples" name="clsVisivelCarCadItem">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="3">
+                            <StringItem index="0" value="Sim"/>
+                            <StringItem index="1" value="N&#xe3;o"/>
+                            <StringItem index="2" value=""/>
+                          </StringArray>
+                        </Property>
+                        <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rVisivelCadItem"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Vis&#xed;vel"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clsVisivelCarCadItemActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rVisivelCadItem">
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rStatusCarCadItem">
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.CampoListaSimples" name="clsSituacaoCarCadItem">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="3">
+                            <StringItem index="0" value="Ativo"/>
+                            <StringItem index="1" value="Inativo"/>
+                            <StringItem index="2" value=" "/>
+                          </StringArray>
+                        </Property>
+                        <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rStatusCarCadItem"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Situa&#xe7;&#xe3;o"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.CampoString" name="csObsCarItemCad">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rObsCarCadItem"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Observa&#xe7;&#xe3;o"/>
+                        <Property name="qtdMaxCaracteres" type="int" value="100"/>
+                      </Properties>
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.CampoListaSimples" name="clsReplicavelCarCadItem">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="3">
+                            <StringItem index="0" value="Sim"/>
+                            <StringItem index="1" value="N&#xe3;o"/>
+                            <StringItem index="2" value=""/>
+                          </StringArray>
+                        </Property>
+                        <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rReplicavelCadItem"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Replic&#xe1;vel"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clsReplicavelCarCadItemActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rReplicavelCadItem">
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppTabCadCatItem">
+                  <Properties>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[1300, 160]"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="Center"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                      <Properties>
+                        <Property name="alignmentX" type="float" value="2.0"/>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[2, 150]"/>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="Center"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.TabelaPadrao" name="tpCadCarItem">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                              <Connection code="otmCaracteristicaItemAdd" type="code"/>
+                            </Property>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tpCadCarItemMouseClicked"/>
+                            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tpCadCarItemKeyPressed"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppAddCarItem">
+                      <Properties>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[120, 150]"/>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="East"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="btAddCaracteristicaItem" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                                              <Component id="btCancelarCaracteristicaItem" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                                              <Component id="btAlterarCaracteristicaItem" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="bDescerCaracteristicaItem" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="bSubirCaracteristicaItem" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="btAddCaracteristicaItem" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btAlterarCaracteristicaItem" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btCancelarCaracteristicaItem" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="bSubirCaracteristicaItem" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="bDescerCaracteristicaItem" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <EmptySpace pref="233" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btAddCaracteristicaItem">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Adicionar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btAddCaracteristicaItemActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btCancelarCaracteristicaItem">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Cancelar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCancelarCaracteristicaItemActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btAlterarCaracteristicaItem">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Alterar"/>
+                            <Property name="enabled" type="boolean" value="false"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btAlterarCaracteristicaItemActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="bDescerCaracteristicaItem">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="null"/>
+                            </Property>
+                            <Property name="toolTipText" type="java.lang.String" value=""/>
+                            <Property name="contentAreaFilled" type="boolean" value="false"/>
+                            <Property name="requestFocusEnabled" type="boolean" value="false"/>
+                            <Property name="rolloverEnabled" type="boolean" value="false"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bDescerCaracteristicaItemActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="bSubirCaracteristicaItem">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="null"/>
+                            </Property>
+                            <Property name="toolTipText" type="java.lang.String" value=""/>
+                            <Property name="contentAreaFilled" type="boolean" value="false"/>
+                            <Property name="requestFocusEnabled" type="boolean" value="false"/>
+                            <Property name="rolloverEnabled" type="boolean" value="false"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bSubirCaracteristicaItemActionPerformed"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rMargemItem">
+                      <Properties>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[10, 10]"/>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="Before"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppPrincCaract">
+              <Properties>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1334, 300]"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="North"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+              <SubComponents>
+                <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="ppCadastroCaracteristica">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                        <TitledBorder position="1" title="Cadastro Caracterist&#xed;cas"/>
+                      </Border>
+                    </Property>
+                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[1029, 170]"/>
+                    </Property>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[1334, 140]"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="North"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="rCatCarCad" min="-2" pref="105" max="-2" attributes="0"/>
+                                          <Component id="rCarCadastro" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="csCatCad" min="-2" pref="256" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="rSubCategoriaCad" min="-2" pref="105" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="csSubCatCarCad" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Component id="csCarCad" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="rStatusCarCad" min="-2" pref="105" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="clsSituacaoCarCad" min="-2" pref="105" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="rVisivelCad" min="-2" pref="105" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="clsVisivelCarCad" min="-2" pref="105" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                                      <Component id="rotulo1" min="-2" pref="105" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jrbUnicoSim" min="-2" pref="60" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jrbUnicoNao" min="-2" pref="60" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="rObsCarCad" min="-2" pref="105" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="csObsCarCad" min="-2" pref="670" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="546" pref="778" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rCatCarCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="rSubCategoriaCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="csSubCatCarCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="csCatCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rCarCadastro" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="csCarCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rObsCarCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="csObsCarCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="clsVisivelCarCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="clsSituacaoCarCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="rStatusCarCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="rVisivelCad" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="jrbUnicoSim" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="rotulo1" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="jrbUnicoNao" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="31" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rCarCadastro">
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rStatusCarCad">
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rObsCarCad">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Observa&#xe7;&#xe3;o:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.CampoString" name="csCarCad">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rCarCadastro"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Descri&#xe7;&#xe3;o"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                        <Property name="qtdMaxCaracteres" type="int" value="100"/>
+                      </Properties>
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.CampoListaSimples" name="clsSituacaoCarCad">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="3">
+                            <StringItem index="0" value="Ativo"/>
+                            <StringItem index="1" value="Inativo"/>
+                            <StringItem index="2" value=" "/>
+                          </StringArray>
+                        </Property>
+                        <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rStatusCarCad"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Situa&#xe7;&#xe3;o"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clsSituacaoCarCadActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rCatCarCad">
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rSubCategoriaCad">
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rVisivelCad">
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.CampoListaSimples" name="clsVisivelCarCad">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="3">
+                            <StringItem index="0" value="Sim"/>
+                            <StringItem index="1" value="N&#xe3;o"/>
+                            <StringItem index="2" value=""/>
+                          </StringArray>
+                        </Property>
+                        <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rVisivelCad"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Vis&#xed;vel"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.CampoString" name="csObsCarCad">
+                      <Properties>
+                        <Property name="qtdMaxCaracteres" type="int" value="100"/>
+                      </Properties>
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.CampoString" name="csSubCatCarCad">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rSubCategoriaCad"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="SubCategoria"/>
+                        <Property name="enabled" type="boolean" value="false"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.CampoString" name="csCatCad">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rCatCarCad"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Categoria"/>
+                        <Property name="enabled" type="boolean" value="false"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="jrbUnicoSim">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="bgUnico"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Sim"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jrbUnicoSimActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rotulo1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#xda;nico:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="jrbUnicoNao">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="bgUnico"/>
+                        </Property>
+                        <Property name="selected" type="boolean" value="true"/>
+                        <Property name="text" type="java.lang.String" value="N&#xe3;o"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jrbUnicoNaoActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="painelPadrao1">
+                  <Properties>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[1334, 150]"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="Center"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+                      <Properties>
+                        <Property name="alignmentX" type="float" value="2.0"/>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[2, 200]"/>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="Center"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.TabelaPadrao" name="tpCadCar">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                              <Connection code="otmCaracteristicaAdd" type="code"/>
+                            </Property>
+                            <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[0, 250]"/>
+                            </Property>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tpCadCarMouseClicked"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao" name="painelPadrao5">
+                      <Properties>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[120, 150]"/>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="East"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="btCancelarCaracteristica" alignment="0" pref="105" max="32767" attributes="0"/>
+                                              <Component id="btAlterarCaracteristica" alignment="0" pref="105" max="32767" attributes="0"/>
+                                              <Component id="btAddCaracteristica" alignment="0" pref="105" max="32767" attributes="0"/>
+                                              <Component id="bDescerCaracteristica" alignment="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="bSubirCaracteristica" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btAddCaracteristica" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btAlterarCaracteristica" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btCancelarCaracteristica" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="bSubirCaracteristica" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="bDescerCaracteristica" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btCancelarCaracteristica">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Cancelar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCancelarCaracteristicaActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btAlterarCaracteristica">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Alterar"/>
+                            <Property name="enabled" type="boolean" value="false"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btAlterarCaracteristicaActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btAddCaracteristica">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Adicionar"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btAddCaracteristicaActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="bDescerCaracteristica">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="null"/>
+                            </Property>
+                            <Property name="toolTipText" type="java.lang.String" value=""/>
+                            <Property name="contentAreaFilled" type="boolean" value="false"/>
+                            <Property name="requestFocusEnabled" type="boolean" value="false"/>
+                            <Property name="rolloverEnabled" type="boolean" value="false"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bDescerCaracteristicaActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="bSubirCaracteristica">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="null"/>
+                            </Property>
+                            <Property name="toolTipText" type="java.lang.String" value=""/>
+                            <Property name="contentAreaFilled" type="boolean" value="false"/>
+                            <Property name="requestFocusEnabled" type="boolean" value="false"/>
+                            <Property name="rolloverEnabled" type="boolean" value="false"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bSubirCaracteristicaActionPerformed"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rMargemCararcter&#xed;stica">
+                      <Properties>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[10, 10]"/>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="Before"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

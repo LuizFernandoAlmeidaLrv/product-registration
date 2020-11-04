@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+  <Properties>
+    <Property name="closable" type="boolean" value="true"/>
+    <Property name="iconifiable" type="boolean" value="true"/>
+    <Property name="title" type="java.lang.String" value="Ger&#xea;nciamento de Usu&#xe1;rios"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,111,0,0,4,44"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+  <SubComponents>
+    <Container class="br.com.martinello.componentesbasicos.paineis.PainelAba" name="jtpUsuarios">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="br.com.martinello.componentesbasicos.paineis.Painel" name="jpConsulta">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Consulta">
+                <Property name="tabTitle" type="java.lang.String" value="Consulta"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jpFiltros" max="32767" attributes="0"/>
+                  <Component id="jspUsuarios" alignment="1" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jpFiltros" min="-2" pref="97" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jspUsuarios" min="-2" pref="203" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" pref="212" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="br.com.martinello.componentesbasicos.paineis.Painel" name="jpFiltros">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Filtros da Pesquisa">
+                      <Connection PropertyName="font" code="ConstantesGlobais.FONTE_11_NORMAL" type="code"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jlFiltroNome" linkSize="2" pref="41" max="32767" attributes="0"/>
+                                      <Component id="jlFiltroLoja" linkSize="2" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="csFiltroLoja" min="-2" pref="146" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="cscFiltroNome" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="526" max="32767" attributes="0"/>
+                                  <Component id="bPequisar" min="-2" pref="95" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="bIncluir" min="-2" pref="95" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="bAlterar" min="-2" pref="95" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="bExcluir" min="-2" pref="95" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="bImportarDBF" min="-2" pref="95" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="2" attributes="0">
+                              <Component id="jlFiltroLoja" linkSize="1" alignment="2" min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="csFiltroLoja" linkSize="1" alignment="2" min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="2" attributes="0">
+                              <Component id="jlFiltroNome" linkSize="1" alignment="2" min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="cscFiltroNome" linkSize="1" alignment="2" min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="2" attributes="0">
+                              <Component id="bPequisar" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="bIncluir" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="bAlterar" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="bExcluir" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="bImportarDBF" alignment="2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="br.com.martinello.componentesbasicos.Rotulo" name="jlFiltroLoja">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Loja:"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.martinello.componentesbasicos.Rotulo" name="jlFiltroNome">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Nome:"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.martinello.componentesbasicos.CampoString" name="csFiltroLoja">
+                </Component>
+                <Component class="br.com.martinello.componentesbasicos.Botao" name="bPequisar">
+                  <Properties>
+                    <Property name="mnemonic" type="int" value="112"/>
+                    <Property name="text" type="java.lang.String" value="Pesquisar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bPequisarActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="br.com.martinello.componentesbasicos.Botao" name="bExcluir">
+                  <Properties>
+                    <Property name="mnemonic" type="int" value="101"/>
+                    <Property name="text" type="java.lang.String" value="Excluir"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.martinello.componentesbasicos.Botao" name="bAlterar">
+                  <Properties>
+                    <Property name="mnemonic" type="int" value="97"/>
+                    <Property name="text" type="java.lang.String" value="Alterar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bAlterarActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="br.com.martinello.componentesbasicos.Botao" name="bIncluir">
+                  <Properties>
+                    <Property name="mnemonic" type="int" value="105"/>
+                    <Property name="text" type="java.lang.String" value="Incluir"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bIncluirActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="br.com.martinello.componentesbasicos.consulta.CampoStringConsulta" name="cscFiltroNome">
+                </Component>
+                <Component class="br.com.martinello.componentesbasicos.Botao" name="bImportarDBF">
+                  <Properties>
+                    <Property name="mnemonic" type="int" value="112"/>
+                    <Property name="text" type="java.lang.String" value="Imp. DBF"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bImportarDBFActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JScrollPane" name="jspUsuarios">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="br.com.martinello.componentesbasicos.TabelaPadrao" name="tpConsultaUsuarios">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="otmConsultaUsuarios" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tpConsultaUsuariosMouseClicked"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="br.com.martinello.componentesbasicos.TabelaPadrao" name="tpConsultaUsuarioMenus">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="otmConsultaUsuarioMenus" type="code"/>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="br.com.martinello.componentesbasicos.paineis.Painel" name="jpCadastro">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Cadastro/Altera&#xe7;&#xe3;o">
+                <Property name="tabTitle" type="java.lang.String" value="Cadastro/Altera&#xe7;&#xe3;o"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+          <SubComponents>
+            <Container class="br.com.martinello.componentesbasicos.paineis.PainelAba" name="paCadastroUsuario">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="Center"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="br.com.martinello.componentesbasicos.paineis.Painel" name="pDadosUsuarios">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                        <EtchetBorder/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Dados Usu&#xe1;rio">
+                        <Property name="tabTitle" type="java.lang.String" value="Dados Usu&#xe1;rio"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="rLoja" min="-2" pref="120" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="ccLoja" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="rCodigo" min="-2" pref="120" max="-2" attributes="0"/>
+                                                      <EmptySpace max="32767" attributes="0"/>
+                                                      <Component id="csCodigoAnterior" min="-2" pref="112" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jlNomeLoja" min="-2" pref="613" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="rLogin" min="-2" pref="120" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="csLogin" min="-2" pref="346" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="rDesbloqueiaCliente" min="-2" pref="120" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="clDesbloqueiaCliente" min="-2" pref="90" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="rDataHoraCadastro" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
+                                                  <Component id="rDataHoraAtualizacao" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="csDataHoraCadastro" min="-2" pref="157" max="-2" attributes="0"/>
+                                                  <Component id="csDataHoraAtualizacao" alignment="0" min="-2" pref="157" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="rStatus" min="-2" pref="120" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="cdValidade" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="rReabilitaVenda" min="-2" pref="120" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="clReabilitaVenda" min="-2" pref="90" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="rNivelLiberacao" min="-2" pref="120" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="clNivelLiberacao" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="rConsultaPreco" min="-2" pref="120" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="clConsultaPreco" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="rLiberaVenda" min="-2" pref="120" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="clLiberaVenda" min="-2" pref="90" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="rFechaCaixa" min="-2" pref="120" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="clFechaCaixa" min="-2" pref="90" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace pref="97" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="rSenha" min="-2" pref="120" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="csSenha" max="32767" attributes="0"/>
+                                          <EmptySpace min="-2" pref="357" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="rNome" min="-2" pref="120" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="csNome" min="-2" pref="703" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="88" pref="88" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="rClassificacao" min="-2" pref="120" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="clClassificacao" min="-2" pref="90" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rLoja" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="ccLoja" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jlNomeLoja" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rCodigo" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="csCodigoAnterior" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rNome" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="csNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rLogin" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="csLogin" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rSenha" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="csSenha" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rClassificacao" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="clClassificacao" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rFechaCaixa" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="clFechaCaixa" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="clLiberaVenda" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="rLiberaVenda" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="clReabilitaVenda" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="rReabilitaVenda" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rConsultaPreco" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="clConsultaPreco" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="clNivelLiberacao" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="rNivelLiberacao" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rDesbloqueiaCliente" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="clDesbloqueiaCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rStatus" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="cdValidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rDataHoraCadastro" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="csDataHoraCadastro" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rDataHoraAtualizacao" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="csDataHoraAtualizacao" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="52" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="br.com.martinello.componentesbasicos.CampoListaSimples" name="clNivelLiberacao">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="4">
+                            <StringItem index="0" value="0"/>
+                            <StringItem index="1" value="1"/>
+                            <StringItem index="2" value="2"/>
+                            <StringItem index="3" value="3"/>
+                          </StringArray>
+                        </Property>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rNivelLiberacao"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="N&#xed;vel Libera&#xe7;&#xe3;o"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoListaSimples(Usuario.class,&quot;nivelLiberacao&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="jlNomeLoja">
+                      <Properties>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
+                        <Property name="text" type="java.lang.String" value=" "/>
+                      </Properties>
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rConsultaPreco">
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.CampoSenha" name="csSenha">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rSenha"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Senha"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoSenha(Usuario.class,&quot;senha&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rLogin">
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rNivelLiberacao">
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rCodigo">
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.CampoString" name="csDataHoraCadastro">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rDataHoraCadastro"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Data/Hora Cad."/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoString(Usuario.class,&quot;dataHoraCadastro&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.gerenciador.componentes.CampoLista" name="clConsultaPreco">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rConsultaPreco"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Consulta Pre&#xe7;o"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.gerenciador.componentes.CampoLista(Usuario.class,&quot;consultaPreco&quot;,&quot;SimNao&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.gerenciador.componentes.CampoLista" name="clLiberaVenda">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rLiberaVenda"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Libera Venda"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.gerenciador.componentes.CampoLista(Usuario.class,&quot;liberaVenda&quot;,&quot;SimNao&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.gerenciador.componentes.CampoLista" name="clFechaCaixa">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rFechaCaixa"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Fecha Caixa"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.gerenciador.componentes.CampoLista(Usuario.class,&quot;fechaCaixa&quot;,&quot;SimNao&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rStatus">
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rLoja">
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rSenha">
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rDataHoraCadastro">
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rLiberaVenda">
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rNome">
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.CampoString" name="csDataHoraAtualizacao">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rDataHoraAtualizacao"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Data/Hora Atu."/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoString(Usuario.class,&quot;dataHoraAtualizacao&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.CampoString" name="csLogin">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rLogin"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Login"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoString(Usuario.class,&quot;login&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.CampoString" name="csNome">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rNome"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Nome"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoString(Usuario.class,&quot;nome&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.CampoString" name="csCodigoAnterior">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rCodigo"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="C&#xf3;digo"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoString(Usuario.class,&quot;codigoAnterior&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.gerenciador.componentes.CampoConsulta" name="ccLoja">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rLoja"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Loja"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.gerenciador.componentes.CampoConsulta(new ConsultavelLoja(Loja.class, &quot;codigo&quot;), Usuario.class, &quot;loja&quot;,&quot;Loja&quot;, jlNomeLoja, &quot;&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rDataHoraAtualizacao">
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rFechaCaixa">
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.CampoData" name="cdValidade">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rStatus"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Status"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.componentesbasicos.CampoData(Usuario.class,&quot;validade&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rDesbloqueiaCliente">
+                    </Component>
+                    <Component class="br.com.martinello.gerenciador.componentes.CampoLista" name="clDesbloqueiaCliente">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rDesbloqueiaCliente"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Desbl. CLiente"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.gerenciador.componentes.CampoLista(Usuario.class,&quot;fechaCaixa&quot;,&quot;SimNao&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rReabilitaVenda">
+                    </Component>
+                    <Component class="br.com.martinello.gerenciador.componentes.CampoLista" name="clReabilitaVenda">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rReabilitaVenda"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Reabilita Venda"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.gerenciador.componentes.CampoLista(Usuario.class,&quot;liberaVenda&quot;,&quot;SimNao&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="br.com.martinello.componentesbasicos.Rotulo" name="rClassificacao">
+                    </Component>
+                    <Component class="br.com.martinello.gerenciador.componentes.CampoLista" name="clClassificacao">
+                      <Properties>
+                        <Property name="componenteRotulo" type="br.com.martinello.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                          <ComponentRef name="rClassificacao"/>
+                        </Property>
+                        <Property name="descricaoRotulo" type="java.lang.String" value="Classifica&#xe7;&#xe3;o"/>
+                        <Property name="obrigatorio" type="boolean" value="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.gerenciador.componentes.CampoLista(Usuario.class,&quot;classificacao&quot;,&quot;ClassificacaoUsuario&quot;)"/>
+                      </AuxValues>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="br.com.martinello.componentesbasicos.paineis.Painel" name="pMenusUsuarios">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Menus Usu&#xe1;rio">
+                        <Property name="tabTitle" type="java.lang.String" value="Menus Usu&#xe1;rio"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                  <SubComponents>
+                    <Container class="br.com.martinello.componentesbasicos.paineis.Painel" name="jPanel3">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder title="Menus">
+                              <Connection PropertyName="font" code="ConstantesGlobais.FONTE_11_NORMAL" type="code"/>
+                            </TitledBorder>
+                          </Border>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="Center"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jspCadastroMenusDisponiveis" min="-2" pref="350" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jbAdicionarMenu" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <Component id="jbRemoverMenu" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Component id="jLabel2" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel1" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                                      <Component id="jspCadastroMenusPerfil" alignment="0" min="-2" pref="350" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
+                                          <Component id="jbAdicionarMenu" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jbRemoverMenu" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jspCadastroMenusDisponiveis" alignment="0" min="-2" pref="275" max="-2" attributes="0"/>
+                                      <Component id="jspCadastroMenusPerfil" alignment="0" min="-2" pref="275" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="br.com.martinello.componentesbasicos.Rotulo" name="jLabel1">
+                          <Properties>
+                            <Property name="horizontalAlignment" type="int" value="2"/>
+                            <Property name="text" type="java.lang.String" value="Selecionados"/>
+                          </Properties>
+                        </Component>
+                        <Component class="br.com.martinello.componentesbasicos.Rotulo" name="jLabel2">
+                          <Properties>
+                            <Property name="horizontalAlignment" type="int" value="2"/>
+                            <Property name="text" type="java.lang.String" value="Dispon&#xed;veis"/>
+                          </Properties>
+                        </Component>
+                        <Component class="br.com.martinello.componentesbasicos.Botao" name="jbRemoverMenu">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="&lt;"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbRemoverMenuActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="br.com.martinello.componentesbasicos.Botao" name="jbAdicionarMenu">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="&gt;"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbAdicionarMenuActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Container class="javax.swing.JScrollPane" name="jspCadastroMenusDisponiveis">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="br.com.martinello.componentesbasicos.TabelaPadrao" name="tpCadastroMenusDisponiveis">
+                              <Properties>
+                                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                                  <Connection code="otmCadastroMenusDisponiveis" type="code"/>
+                                </Property>
+                                <Property name="showGrid" type="boolean" value="true"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Container class="javax.swing.JScrollPane" name="jspCadastroMenusPerfil">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="br.com.martinello.componentesbasicos.TabelaPadrao" name="tpCadastroMenusPerfil">
+                              <Properties>
+                                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                                  <Connection code="otmCadastroUsuarioMenus" type="code"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                    <Container class="br.com.martinello.componentesbasicos.paineis.Painel" name="jPanel4">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder title="Perfil">
+                              <Connection PropertyName="font" code="ConstantesGlobais.FONTE_11_NORMAL" type="code"/>
+                            </TitledBorder>
+                          </Border>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="North"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="ccPerfilAtribuir" min="-2" pref="115" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="ccPerfilAtribuir" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="br.com.martinello.gerenciador.componentes.CampoConsulta" name="ccPerfilAtribuir">
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new br.com.martinello.gerenciador.componentes.CampoConsulta(new ConsultavelPerfil(Perfil.class, &quot;idPerfil&quot;), Perfil.class, &quot;idPerfil&quot;,&quot;Perfil&quot;, null, &quot;&quot;)"/>
+                          </AuxValues>
+                        </Component>
+                        <Component class="br.com.martinello.componentesbasicos.Botao" name="jButton1">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Atribuir"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="br.com.martinello.componentesbasicos.paineis.Painel" name="pBotoes">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="South"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+              <SubComponents>
+                <Component class="br.com.martinello.componentesbasicos.Botao" name="jbSalvar">
+                  <Properties>
+                    <Property name="mnemonic" type="int" value="115"/>
+                    <Property name="text" type="java.lang.String" value="Salvar"/>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[85, 23]"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbSalvarActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="br.com.martinello.componentesbasicos.Botao" name="jbCancelar">
+                  <Properties>
+                    <Property name="mnemonic" type="int" value="99"/>
+                    <Property name="text" type="java.lang.String" value="Cancelar"/>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[85, 23]"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbCancelarActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="br.com.martinello.componentesbasicos.paineis.JPStatus" name="jpsStatusBar">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="South"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+  </SubComponents>
+</Form>
