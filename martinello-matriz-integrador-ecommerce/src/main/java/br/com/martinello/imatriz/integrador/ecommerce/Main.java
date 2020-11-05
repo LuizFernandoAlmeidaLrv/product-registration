@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.martinello.imatriz.ntegrador.ecommerce;
+package br.com.martinello.imatriz.integrador.ecommerce;
 
-import br.com.martinello.imatriz.ntegrador.ecommerce.control.EnvProdutoControl;
+import br.com.martinello.imatriz.integrador.ecommerce.control.EnvProdutoControl;
 import br.com.martinello.matriz.util.integracao.ConexaoWebService;
 import br.com.martinello.matriz.util.integracao.Retorno;
 import com.google.gson.Gson;

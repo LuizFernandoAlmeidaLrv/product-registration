@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.martinello.imatriz.ntegrador.ecommerce;
+package br.com.martinello.imatriz.integrador.ecommerce;
 
-import br.com.martinello.imatriz.ntegrador.ecommerce.control.EnvCategoriaControl;
-import br.com.martinello.imatriz.ntegrador.ecommerce.control.EnvFabricanteControl;
-import br.com.martinello.imatriz.ntegrador.ecommerce.control.EnvProdutoControl;
+import br.com.martinello.imatriz.integrador.ecommerce.control.EnvCategoriaControl;
+import br.com.martinello.imatriz.integrador.ecommerce.control.EnvFabricanteControl;
+import br.com.martinello.imatriz.integrador.ecommerce.control.EnvProdutoControl;
 import br.com.martinello.matriz.bd.integracao.control.PendenciaControlInt;
 import br.com.martinello.matriz.bd.integracao.model.domain.Pendencia;
 import br.com.martinello.matriz.bd.transients.ChavePendencia;

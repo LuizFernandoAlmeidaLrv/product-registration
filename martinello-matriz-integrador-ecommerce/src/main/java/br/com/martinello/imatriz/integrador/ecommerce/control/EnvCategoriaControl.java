@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.martinello.imatriz.ntegrador.ecommerce.control;
+package br.com.martinello.imatriz.integrador.ecommerce.control;
 
 import br.com.martinello.matriz.bd.integracao.control.CategoriaControlInt;
 import br.com.martinello.matriz.bd.transients.CategoriaTray;

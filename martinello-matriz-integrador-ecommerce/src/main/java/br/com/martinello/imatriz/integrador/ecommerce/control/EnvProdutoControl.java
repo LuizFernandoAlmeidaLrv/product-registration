@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.martinello.imatriz.ntegrador.ecommerce.control;
+package br.com.martinello.imatriz.integrador.ecommerce.control;
 
-import br.com.martinello.imatriz.ntegrador.ecommerce.CategoriaRelacionarTray;
-import br.com.martinello.imatriz.ntegrador.ecommerce.RetornoTray;
+import br.com.martinello.imatriz.integrador.ecommerce.CategoriaRelacionarTray;
+import br.com.martinello.imatriz.integrador.ecommerce.RetornoTray;
 import br.com.martinello.matriz.bd.integracao.control.ProdutoControlInt;
 import br.com.martinello.matriz.bd.transients.CatalogoErp;
 import br.com.martinello.matriz.bd.transients.ChavePendencia;
