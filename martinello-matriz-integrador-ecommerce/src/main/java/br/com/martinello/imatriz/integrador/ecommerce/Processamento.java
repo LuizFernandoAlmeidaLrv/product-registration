@@ -43,7 +43,7 @@ public class Processamento {
             for (Pendencia pendencia : lPendencia) {
 
                 /* Não permitir executar se tiver pendências anteriores com erro ou pendente. */
- /* Lock na pendência. */
+                /* Lock na pendência. */
                 ChavePendencia chavePendencia = gson.fromJson(pendencia.getChave(), ChavePendencia.class);
 
                 EnvCategoriaControl envCategoriaControl = new EnvCategoriaControl();

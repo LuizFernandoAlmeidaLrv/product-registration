@@ -16,6 +16,12 @@ public class PedidoPagamentoTray {
     private Long formaPagamentoId;
     private Long numeroParcelas;
     private Double valorParcela;
+    private Double valorDesconto;
+    private Double valorJuros;
+    private Double valorTotal;
+    private List<PedidoPagamentoBoletoTray> boleto;
+    private List<PedidoPagamentoCartaoCreditoTray> cartaoCredito;
+    private List<PedidoPagamentoStatusTray> pagamentoStatus;
     private List<PedidoPagamentoInformacaoAdicionalTray> informacaoAdicional;
 
     public Long getFormaPagamentoId() {
@@ -40,6 +46,54 @@ public class PedidoPagamentoTray {
 
     public void setValorParcela(Double valorParcela) {
         this.valorParcela = valorParcela;
+    }
+
+    public Double getValorDesconto() {
+        return valorDesconto;
+    }
+
+    public void setValorDesconto(Double valorDesconto) {
+        this.valorDesconto = valorDesconto;
+    }
+
+    public Double getValorJuros() {
+        return valorJuros;
+    }
+
+    public void setValorJuros(Double valorJuros) {
+        this.valorJuros = valorJuros;
+    }
+
+    public Double getValorTotal() {
+        return valorTotal;
+    }
+
+    public void setValorTotal(Double valorTotal) {
+        this.valorTotal = valorTotal;
+    }
+
+    public List<PedidoPagamentoBoletoTray> getBoleto() {
+        return boleto;
+    }
+
+    public void setBoleto(List<PedidoPagamentoBoletoTray> boleto) {
+        this.boleto = boleto;
+    }
+
+    public List<PedidoPagamentoCartaoCreditoTray> getCartaoCredito() {
+        return cartaoCredito;
+    }
+
+    public void setCartaoCredito(List<PedidoPagamentoCartaoCreditoTray> cartaoCredito) {
+        this.cartaoCredito = cartaoCredito;
+    }
+
+    public List<PedidoPagamentoStatusTray> getPagamentoStatus() {
+        return pagamentoStatus;
+    }
+
+    public void setPagamentoStatus(List<PedidoPagamentoStatusTray> pagamentoStatus) {
+        this.pagamentoStatus = pagamentoStatus;
     }
 
     public List<PedidoPagamentoInformacaoAdicionalTray> getInformacaoAdicional() {

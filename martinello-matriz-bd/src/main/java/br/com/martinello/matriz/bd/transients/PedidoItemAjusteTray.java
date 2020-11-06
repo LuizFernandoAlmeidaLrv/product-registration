@@ -9,18 +9,18 @@ package br.com.martinello.matriz.bd.transients;
  *
  * @author rafael.rosar
  */
-public class PedidoProdutoAjusteTray {
+public class PedidoItemAjusteTray {
 
-    private String tipo;
+    private Long tipo;
     private Double valor;
     private String observacao;
     private String nome;
 
-    public String getTipo() {
+    public Long getTipo() {
         return tipo;
     }
 
-    public void setTipo(String tipo) {
+    public void setTipo(Long tipo) {
         this.tipo = tipo;
     }
 

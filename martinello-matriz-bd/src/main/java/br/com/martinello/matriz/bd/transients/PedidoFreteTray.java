@@ -6,6 +6,7 @@
 package br.com.martinello.matriz.bd.transients;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  *
@@ -13,24 +14,22 @@ import java.util.Date;
  */
 public class PedidoFreteTray {
 
-    private Long centroDistribuicaoId;
     private Long freteContratoId;
+    private String freteContrato;
+    private String referenciaConector;
     private Long peso;
     private Long pesoCobrado;
     private Long volume;
     private Long volumeCobrado;
     private Long prazoEnvio;
+    private String prazoEnvioTexto;
     private Double valorFreteEmpresa;
     private Double valorFreteCliente;
-    private Date dataEntrega;
-
-    public Long getCentroDistribuicaoId() {
-        return centroDistribuicaoId;
-    }
-
-    public void setCentroDistribuicaoId(Long centroDistribuicaoId) {
-        this.centroDistribuicaoId = centroDistribuicaoId;
-    }
+    private Long retiradaLojaId;
+    private List<PedidoCentroDistribuicaoTray> centrosDistribuicao;
+    private String servico;
+    private String retiradaAgendada;
+    private String agendamento;
 
     public Long getFreteContratoId() {
         return freteContratoId;
@@ -38,6 +37,22 @@ public class PedidoFreteTray {
 
     public void setFreteContratoId(Long freteContratoId) {
         this.freteContratoId = freteContratoId;
+    }
+
+    public String getFreteContrato() {
+        return freteContrato;
+    }
+
+    public void setFreteContrato(String freteContrato) {
+        this.freteContrato = freteContrato;
+    }
+
+    public String getReferenciaConector() {
+        return referenciaConector;
+    }
+
+    public void setReferenciaConector(String referenciaConector) {
+        this.referenciaConector = referenciaConector;
     }
 
     public Long getPeso() {
@@ -80,6 +95,14 @@ public class PedidoFreteTray {
         this.prazoEnvio = prazoEnvio;
     }
 
+    public String getPrazoEnvioTexto() {
+        return prazoEnvioTexto;
+    }
+
+    public void setPrazoEnvioTexto(String prazoEnvioTexto) {
+        this.prazoEnvioTexto = prazoEnvioTexto;
+    }
+
     public Double getValorFreteEmpresa() {
         return valorFreteEmpresa;
     }
@@ -96,11 +119,44 @@ public class PedidoFreteTray {
         this.valorFreteCliente = valorFreteCliente;
     }
 
-    public Date getDataEntrega() {
-        return dataEntrega;
+    public Long getRetiradaLojaId() {
+        return retiradaLojaId;
     }
 
-    public void setDataEntrega(Date dataEntrega) {
-        this.dataEntrega = dataEntrega;
+    public void setRetiradaLojaId(Long retiradaLojaId) {
+        this.retiradaLojaId = retiradaLojaId;
     }
+
+    public List<PedidoCentroDistribuicaoTray> getCentrosDistribuicao() {
+        return centrosDistribuicao;
+    }
+
+    public void setCentrosDistribuicao(List<PedidoCentroDistribuicaoTray> centrosDistribuicao) {
+        this.centrosDistribuicao = centrosDistribuicao;
+    }
+
+    public String getServico() {
+        return servico;
+    }
+
+    public void setServico(String servico) {
+        this.servico = servico;
+    }
+
+    public String getRetiradaAgendada() {
+        return retiradaAgendada;
+    }
+
+    public void setRetiradaAgendada(String retiradaAgendada) {
+        this.retiradaAgendada = retiradaAgendada;
+    }
+
+    public String getAgendamento() {
+        return agendamento;
+    }
+
+    public void setAgendamento(String agendamento) {
+        this.agendamento = agendamento;
+    }
+
 }

@@ -27,6 +27,7 @@ public class ConexaoWebService {
     private ClientResponse clientResponse;
     public static final String OK = "ok";
     public static final String ERRO = "erro";
+    public static final String GET = "GET";
 
     public ConexaoWebService() {
     }
@@ -64,7 +65,7 @@ public class ConexaoWebService {
                 clientResponse = webResource.path(servico).header("Authorization", token).type(MediaType.APPLICATION_JSON).put(ClientResponse.class, json);
             } else if (tipoServico.equals("DELETE")) {
                 clientResponse = webResource.path(servico).header("Authorization", token).type(MediaType.APPLICATION_JSON).delete(ClientResponse.class, json);
-            } else if (tipoServico.equals("GET")) {
+            } else if (tipoServico.equals(GET)) {
                 System.out.println("URL de Conexão " + webResource.getURI() + servico);
                 clientResponse = webResource.path(servico).header("Authorization", token).accept(MediaType.APPLICATION_JSON).get(ClientResponse.class);
             }
