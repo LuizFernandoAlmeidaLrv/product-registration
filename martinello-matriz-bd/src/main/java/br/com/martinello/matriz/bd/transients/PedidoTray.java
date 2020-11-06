@@ -34,13 +34,9 @@ public class PedidoTray {
     private Long enderecoId;
     private Boolean isMobile;
     private Long eventoId;
-    /*Nome precisa ser assim para a conversão correta do GSON */
     private List<PedidoItemTray> itens;
-    /*Nome precisa ser assim para a conversão correta do GSON */
     private List<PedidoFreteTray> fretes;
-    /*Nome precisa ser assim para a conversão correta do GSON */
     private List<PedidoAssinaturaTray> assinatura;
-    /*Nome precisa ser assim para a conversão correta do GSON */
     private List<PedidoPagamentoTray> pagamento;
     private PedidoEnderecoTray pedidoEndereco;
     private Long canalId;
@@ -48,12 +44,14 @@ public class PedidoTray {
     private String cupomDesconto;
     private Long retiradaLojaId;
     private boolean isPedidoEvento;
-    /*Nome precisa ser assim para a conversão correta do GSON */
     private List<PedidoObservacaoTray> observacao;
     private Double valorCreditoFidelidade;
     private boolean valido;
     private Double valorSubTotalSemDescontos;
 
+    public PedidoTray() {
+    }
+        
     public Long getPedidoId() {
         return pedidoId;
     }
