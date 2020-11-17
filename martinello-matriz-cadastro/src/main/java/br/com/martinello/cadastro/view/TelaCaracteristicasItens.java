@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
 
+
 /**
  *
  * @author luiz.almeida
@@ -53,6 +54,7 @@ public class TelaCaracteristicasItens extends TelaPadrao {
     private static String catSelect;
     private String cat;
     private String codigo;
+     private String codigo2;
     private String salvarAlterar = "Salvar";
     private final ObjectTableModel<CaracteristicaItem> otmCaracteristicaItem
             = new ObjectTableModel<>(CaracteristicaItem.class, "subCategoria,caracteristica,idCaracteristicaItem,caracteristicaItem,seqCatIte,situacao,visivel,observacao,idUsuario,nomeUsuario,dataCadastro");
