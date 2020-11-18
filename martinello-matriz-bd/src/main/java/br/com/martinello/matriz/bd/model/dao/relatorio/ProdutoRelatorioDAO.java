@@ -96,12 +96,11 @@ public class ProdutoRelatorioDAO {
             HashMap parameters = new HashMap();
             parameters.put("CODIGO", codigo);
             parameters.put("VISSIT", "S");
-            //  InputStream caminho = this.getClass().getResourceAsStream("\\\\srvaplicacao\\SistemaNegativador\\Cadastro\\Relatorios\\Produto.jasper");
-            String jasper = "\\\\srvaplicacao\\SistemaNegativador\\Cadastro\\Relatorios\\Produto.jasper";
+             String jasper = "\\\\serveraplicacao\\SistemaCadastro\\Relatorios\\Produto.jasper";
             String temp = Utilitarios.dataHoraAtual().replaceAll("[/]", "-").replaceAll("[:]", "-").replaceAll("[.]", "-");
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasper, parameters, jrRS);
 
-            String arquivo = "//srvaplicacao/SistemaNegativador/Cadastro/Relatorios/Produto_" + codigo + "_" + temp + ".pdf";
+            String arquivo = "//serveraplicacao/SistemaCadastro/Relatorios/Produto_" + codigo + "_" + temp + ".pdf";
             JasperExportManager.exportReportToPdfFile(jasperPrint, arquivo);
             File file = new File(arquivo);
             Desktop.getDesktop().open(file);
@@ -157,7 +156,7 @@ public class ProdutoRelatorioDAO {
 
         try {
             //  fileOut = new FileOutputStream(PathTillProject + diretorio + "PlanilhaGrid" + hora + ".xlsx");
-            arq = "\\\\srvaplicacao\\SistemaNegativador\\Cadastro\\Relatorios\\" + "RelacaoProdutosCadastrado" + idUsu + ".xlsx";
+            arq = "\\\\serveraplicacao\\SistemaCadastro\\Relatorios\\" + "RelacaoProdutosCadastrado" + idUsu + ".xlsx";
             fileOut = new FileOutputStream(arq);
             /* Definir o Cabeçalho da Planilha */
             row = firstSheet.createRow(0);
@@ -273,7 +272,7 @@ public class ProdutoRelatorioDAO {
                 + " (SELECT 1 FROM USU_T075DPR WHERE USU_T075DPR.USU_CODPRO = CODPRO)";
         String idUsu = Integer.toString(idUsuario);
         try {
-            arq = "\\\\srvaplicacao\\SistemaNegativador\\Cadastro\\Relatorios\\" + "RelacaoProdutosNaoCadastrado" + idUsu + ".xlsx";
+            arq = "\\\\serveraplicacao\\SistemaCadastro\\Relatorios\\" + "RelacaoProdutosNaoCadastrado" + idUsu + ".xlsx";
             fileOut = new FileOutputStream(arq);
             /* Definir o Cabeçalho da Planilha */
             row = firstSheet.createRow(0);

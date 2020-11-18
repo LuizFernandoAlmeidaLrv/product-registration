@@ -29,15 +29,15 @@ import br.com.martinello.matriz.util.excessoes.ErroSistemaException;
 import br.com.martinello.matriz.util.filtro.Filtro;
 import com.towel.swing.table.ObjectTableModel;
 import java.awt.Color;
+import java.awt.Desktop;
 import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.CellEditor;
 import javax.swing.JColorChooser;
 import javax.swing.JFileChooser;
@@ -45,10 +45,6 @@ import javax.swing.JOptionPane;
 import javax.swing.event.CellEditorListener;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ListSelectionEvent;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.Style;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.StyledDocument;
 
 /**
  *
@@ -126,10 +122,6 @@ public class TelaProduto extends TelaPadrao {
         otmArquivo.setColEditable(4, true);
         otmArquivo.setColEditable(5, true);
         otmCatalogoItem.setColEditable(5, true);
-        adicionaTamanhosNaCombo(clsTamanho);
-        adicionaFontesNaCombo(clsFonte);
-        clsTamanho.setSelectedIndex(3);
-        clsFonte.setSelectedIndex(2);
         //  ccpProduto.setFiltroSituacao("Consulta");
         tpConsultaProduto.getSelectionModel().addListSelectionListener((ListSelectionEvent evt) -> {
             if (evt.getValueIsAdjusting()) {
@@ -199,13 +191,9 @@ public class TelaProduto extends TelaPadrao {
         ppCadastroGeral = new br.com.martinello.matriz.componentesbasicos.paineis.PainelAba();
         ppDescricao = new br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao();
         painelEstilo = new br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao();
-        rotulo1 = new br.com.martinello.matriz.componentesbasicos.Rotulo();
-        jcbNegrito = new javax.swing.JCheckBox();
-        jcbItalico = new javax.swing.JCheckBox();
-        JcbSublinhado = new javax.swing.JCheckBox();
-        clsFonte = new br.com.martinello.matriz.componentesbasicos.CampoListaSimples();
-        clsTamanho = new br.com.martinello.matriz.componentesbasicos.CampoListaSimples();
-        btCor = new br.com.martinello.matriz.componentesbasicos.Botao();
+        rDescricaoLonga = new br.com.martinello.matriz.componentesbasicos.Rotulo();
+        rNome = new br.com.martinello.matriz.componentesbasicos.Rotulo();
+        csNomeProduto = new br.com.martinello.matriz.componentesbasicos.CampoString();
         jScrollPane2 = new javax.swing.JScrollPane();
         areaDeTexto = new javax.swing.JTextPane();
         ppCadastroCaracteristicas = new br.com.martinello.matriz.componentesbasicos.paineis.PainelPadrao();
@@ -631,50 +619,15 @@ public class TelaProduto extends TelaPadrao {
 
         painelEstilo.setPreferredSize(new java.awt.Dimension(1274, 60));
 
-        rotulo1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        rotulo1.setText("Descrição longa para o produto");
-        rotulo1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        rotulo1.setPreferredSize(new java.awt.Dimension(184, 21));
+        rDescricaoLonga.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        rDescricaoLonga.setText("Descrição longa para o produto");
+        rDescricaoLonga.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rDescricaoLonga.setPreferredSize(new java.awt.Dimension(184, 21));
 
-        jcbNegrito.setText("Negrito");
-        jcbNegrito.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jcbNegritoActionPerformed(evt);
-            }
-        });
-
-        jcbItalico.setText("Italico");
-        jcbItalico.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jcbItalicoActionPerformed(evt);
-            }
-        });
-
-        JcbSublinhado.setText("Sublinhado");
-        JcbSublinhado.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JcbSublinhadoActionPerformed(evt);
-            }
-        });
-
-        clsFonte.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clsFonteActionPerformed(evt);
-            }
-        });
-
-        clsTamanho.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clsTamanhoActionPerformed(evt);
-            }
-        });
-
-        btCor.setText("Cor");
-        btCor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btCorActionPerformed(evt);
-            }
-        });
+        csNomeProduto.setComponenteRotulo(rNome);
+        csNomeProduto.setDescricaoRotulo("Nome");
+        csNomeProduto.setName(""); // NOI18N
+        csNomeProduto.setObrigatorio(true);
 
         javax.swing.GroupLayout painelEstiloLayout = new javax.swing.GroupLayout(painelEstilo);
         painelEstilo.setLayout(painelEstiloLayout);
@@ -683,33 +636,22 @@ public class TelaProduto extends TelaPadrao {
             .addGroup(painelEstiloLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(painelEstiloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(rotulo1, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rDescricaoLonga, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(painelEstiloLayout.createSequentialGroup()
-                        .addComponent(jcbNegrito)
+                        .addComponent(rNome, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jcbItalico)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JcbSublinhado)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(clsFonte, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(clsTamanho, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btCor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(723, Short.MAX_VALUE))
+                        .addComponent(csNomeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(530, Short.MAX_VALUE))
         );
         painelEstiloLayout.setVerticalGroup(
             painelEstiloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painelEstiloLayout.createSequentialGroup()
-                .addComponent(rotulo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
-                .addGroup(painelEstiloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jcbNegrito)
-                    .addComponent(jcbItalico)
-                    .addComponent(JcbSublinhado)
-                    .addComponent(clsFonte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(clsTamanho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btCor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelEstiloLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(painelEstiloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(csNomeProduto, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rNome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rDescricaoLonga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         ppDescricao.add(painelEstilo, java.awt.BorderLayout.PAGE_START);
@@ -1126,30 +1068,6 @@ public class TelaProduto extends TelaPadrao {
         addArquivo();
     }//GEN-LAST:event_btSalvarAnexoActionPerformed
 
-    private void btCorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCorActionPerformed
-        escolherCor();
-    }//GEN-LAST:event_btCorActionPerformed
-
-    private void jcbNegritoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbNegritoActionPerformed
-        modificaEstilo();
-    }//GEN-LAST:event_jcbNegritoActionPerformed
-
-    private void jcbItalicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbItalicoActionPerformed
-        modificaEstilo();
-    }//GEN-LAST:event_jcbItalicoActionPerformed
-
-    private void JcbSublinhadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JcbSublinhadoActionPerformed
-        modificaEstilo();
-    }//GEN-LAST:event_JcbSublinhadoActionPerformed
-
-    private void clsFonteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clsFonteActionPerformed
-        modificaEstilo();
-    }//GEN-LAST:event_clsFonteActionPerformed
-
-    private void clsTamanhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clsTamanhoActionPerformed
-        modificaEstilo();
-    }//GEN-LAST:event_clsTamanhoActionPerformed
-
     private void clsSituacaoProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clsSituacaoProdutoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_clsSituacaoProdutoActionPerformed
@@ -1200,7 +1118,7 @@ public class TelaProduto extends TelaPadrao {
     }//GEN-LAST:event_btExcluirAnexoActionPerformed
 
     private void bVizualizarAnexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVizualizarAnexoActionPerformed
-        // TODO add your handling code here:
+       vizualizarImagem();
     }//GEN-LAST:event_bVizualizarAnexoActionPerformed
 
     private void btExcluirAnexo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExcluirAnexo1ActionPerformed
@@ -1258,7 +1176,6 @@ public class TelaProduto extends TelaPadrao {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBox JcbSublinhado;
     private javax.swing.JTextPane areaDeTexto;
     private br.com.martinello.matriz.componentesbasicos.Botao bVizualizarAnexo;
     private br.com.martinello.matriz.componentesbasicos.Botao botao1;
@@ -1268,7 +1185,6 @@ public class TelaProduto extends TelaPadrao {
     private br.com.martinello.matriz.componentesbasicos.Botao btAlterarProduto;
     private br.com.martinello.matriz.componentesbasicos.Botao btCancelarCaracteristica;
     private br.com.martinello.matriz.componentesbasicos.Botao btCancelarSubCat;
-    private br.com.martinello.matriz.componentesbasicos.Botao btCor;
     private br.com.martinello.matriz.componentesbasicos.Botao btExcluirAnexo;
     private br.com.martinello.matriz.componentesbasicos.Botao btExcluirAnexo1;
     private br.com.martinello.matriz.componentesbasicos.Botao btExcluirProduto;
@@ -1284,13 +1200,12 @@ public class TelaProduto extends TelaPadrao {
     private br.com.martinello.matriz.componentesbasicos.CampoInteiro ciCodCatPaiCatalogo;
     private br.com.martinello.matriz.componentesbasicos.CampoListaSimples clsCatCad;
     private br.com.martinello.matriz.componentesbasicos.CampoListaSimples clsCategoriaFiltro;
-    private br.com.martinello.matriz.componentesbasicos.CampoListaSimples clsFonte;
     private br.com.martinello.matriz.componentesbasicos.CampoListaSimples clsSituacaoProduto;
     private br.com.martinello.matriz.componentesbasicos.CampoListaSimples clsSubCatCad;
     private br.com.martinello.matriz.componentesbasicos.CampoListaSimples clsSubCatFiltro;
-    private br.com.martinello.matriz.componentesbasicos.CampoListaSimples clsTamanho;
     private br.com.martinello.matriz.componentesbasicos.CampoListaSimples clsVisivelProduto;
     private br.com.martinello.matriz.componentesbasicos.CampoString csCodigo;
+    private br.com.martinello.matriz.componentesbasicos.CampoString csNomeProduto;
     private br.com.martinello.matriz.componentesbasicos.consulta.CampoStringConsulta cscFiltroCat;
     private br.com.martinello.matriz.componentesbasicos.consulta.CampoStringConsulta cscFiltroCatPai;
     private br.com.martinello.matriz.componentesbasicos.consulta.CampoStringConsulta cscFiltroProduto;
@@ -1298,8 +1213,6 @@ public class TelaProduto extends TelaPadrao {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JCheckBox jcbItalico;
-    private javax.swing.JCheckBox jcbNegrito;
     private br.com.martinello.matriz.componentesbasicos.paineis.JPStatus jpsProduto;
     private javax.swing.JScrollPane jspInformacoes;
     private javax.swing.JScrollPane jspTabConsultaProduto;
@@ -1334,7 +1247,9 @@ public class TelaProduto extends TelaPadrao {
     private br.com.martinello.matriz.componentesbasicos.Rotulo rCategoriaFiltro;
     private br.com.martinello.matriz.componentesbasicos.Rotulo rCodCatPaiCatalogo;
     private br.com.martinello.matriz.componentesbasicos.Rotulo rDescProCad;
+    private br.com.martinello.matriz.componentesbasicos.Rotulo rDescricaoLonga;
     private br.com.martinello.matriz.componentesbasicos.Rotulo rIdProdutoFiltro;
+    private br.com.martinello.matriz.componentesbasicos.Rotulo rNome;
     private br.com.martinello.matriz.componentesbasicos.Rotulo rProduto;
     private br.com.martinello.matriz.componentesbasicos.Rotulo rProdutoCadastro;
     private br.com.martinello.matriz.componentesbasicos.Rotulo rQtdProduto;
@@ -1344,7 +1259,6 @@ public class TelaProduto extends TelaPadrao {
     private br.com.martinello.matriz.componentesbasicos.Rotulo rSubCatCad;
     private br.com.martinello.matriz.componentesbasicos.Rotulo rSubCategoriaFiltro;
     private br.com.martinello.matriz.componentesbasicos.Rotulo rVisivelProduto;
-    private br.com.martinello.matriz.componentesbasicos.Rotulo rotulo1;
     private br.com.martinello.matriz.componentesbasicos.TabelaPadrao tpAnexos;
     private br.com.martinello.matriz.componentesbasicos.TabelaPadrao tpCadCar;
     private br.com.martinello.matriz.componentesbasicos.TabelaPadrao tpCaracteristicas;
@@ -1865,46 +1779,6 @@ public class TelaProduto extends TelaPadrao {
         escolherCor = new JColorChooser();
         cor = escolherCor.showDialog(null, "Selecione", Color.BLACK);
 
-        modificaEstilo();
-    }
-
-    public void modificaEstilo() {
-        StyledDocument documento = (StyledDocument) areaDeTexto.getDocument();
-        Style estilo = documento.getStyle(documento.addStyle("StyleAdd", null)
-                .getName());
-
-        // sublinhado, negrito, itálico
-        StyleConstants.setBold(estilo, jcbNegrito.isSelected());
-        StyleConstants.setItalic(estilo, jcbItalico.isSelected());
-        StyleConstants.setUnderline(estilo, JcbSublinhado.isSelected());
-
-        // cor
-        if (cor != null) {
-            StyleConstants.setForeground(estilo, cor);
-        }
-
-        // fonte
-        String fonte = (String) clsFonte.getSelectedItem();
-        if (fonte != null) {
-            StyleConstants.setFontFamily(estilo, fonte);
-        }
-
-        // tamanho
-        int tamanhoFonte = 8;
-        tamanhoFonte = (Integer) clsTamanho.getSelectedItem();
-        StyleConstants.setFontSize(estilo, tamanhoFonte);
-
-        String textoFormatado = areaDeTexto.getText();
-        areaDeTexto.setText("");
-        documento.addStyle("Style", estilo);
-
-        try {
-            documento.insertString(documento.getLength(), textoFormatado,
-                    estilo);
-        } catch (BadLocationException e) {
-            e.printStackTrace();
-        }
-
     }
 
     private void limparCadastro() {
@@ -1913,9 +1787,7 @@ public class TelaProduto extends TelaPadrao {
         areaDeTexto.setText("");
         ccpProdutoIncluir.setProduto(new Produto());
         buscarProdutos("Pesquisar");
-        JcbSublinhado.setSelected(false);
-        jcbItalico.setSelected(false);
-        jcbNegrito.setSelected(false);
+
         ppCadastroProduto.setEnabled(false);
         //  clsCatCad.setEnabled(true);
         clsSubCatCad.setEnabled(true);
@@ -2056,6 +1928,17 @@ public class TelaProduto extends TelaPadrao {
         } else {
             JOptionPane.showMessageDialog(rootPane, "Registro já cadastrado não pôde ser removido!\n" + " Caso queira você pode inativar a categoria.");
         }
+    }
+
+    private void vizualizarImagem() {
+        try {
+            carregarParametros();
+            arquivos = otmArquivo.getValue(tpAnexos.getLinhaSelecionada());
+            File file = new File(dirArqDestino + arquivos.getProduto() + "//" + arquivos.getNovoNome() + "." + arquivos.getExtencao());
+            Desktop.getDesktop().open(file);            
+        } catch (IOException ex) {
+            jpsProduto.setStatus(ex.getMessage(), JPStatus.ERRO);
+        }       
     }
 
 }

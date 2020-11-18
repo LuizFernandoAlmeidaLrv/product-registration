@@ -729,47 +729,36 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="rotulo1" alignment="0" min="-2" pref="227" max="-2" attributes="0"/>
+                                      <Component id="rDescricaoLonga" alignment="0" min="-2" pref="252" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jcbNegrito" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rNome" min="-2" pref="105" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jcbItalico" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="JcbSublinhado" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="clsFonte" min="-2" pref="120" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="clsTamanho" min="-2" pref="120" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btCor" min="-2" max="-2" attributes="0"/>
+                                          <Component id="csNomeProduto" min="-2" pref="650" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="723" max="32767" attributes="0"/>
+                                  <EmptySpace pref="530" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="rotulo1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="15" max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jcbNegrito" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jcbItalico" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="JcbSublinhado" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="clsFonte" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="clsTamanho" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="btCor" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="csNomeProduto" alignment="1" min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="rNome" alignment="1" min="-2" pref="21" max="-2" attributes="0"/>
                                   </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="rDescricaoLonga" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rotulo1">
+                        <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rDescricaoLonga">
                           <Properties>
                             <Property name="horizontalAlignment" type="int" value="2"/>
                             <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o longa para o produto"/>
@@ -781,47 +770,17 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JCheckBox" name="jcbNegrito">
+                        <Component class="br.com.martinello.matriz.componentesbasicos.Rotulo" name="rNome">
+                        </Component>
+                        <Component class="br.com.martinello.matriz.componentesbasicos.CampoString" name="csNomeProduto">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Negrito"/>
+                            <Property name="componenteRotulo" type="br.com.martinello.matriz.componentesbasicos.Rotulo" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                              <ComponentRef name="rNome"/>
+                            </Property>
+                            <Property name="descricaoRotulo" type="java.lang.String" value="Nome"/>
+                            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+                            <Property name="obrigatorio" type="boolean" value="true"/>
                           </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcbNegritoActionPerformed"/>
-                          </Events>
-                        </Component>
-                        <Component class="javax.swing.JCheckBox" name="jcbItalico">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Italico"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcbItalicoActionPerformed"/>
-                          </Events>
-                        </Component>
-                        <Component class="javax.swing.JCheckBox" name="JcbSublinhado">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Sublinhado"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JcbSublinhadoActionPerformed"/>
-                          </Events>
-                        </Component>
-                        <Component class="br.com.martinello.matriz.componentesbasicos.CampoListaSimples" name="clsFonte">
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clsFonteActionPerformed"/>
-                          </Events>
-                        </Component>
-                        <Component class="br.com.martinello.matriz.componentesbasicos.CampoListaSimples" name="clsTamanho">
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clsTamanhoActionPerformed"/>
-                          </Events>
-                        </Component>
-                        <Component class="br.com.martinello.matriz.componentesbasicos.Botao" name="btCor">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Cor"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCorActionPerformed"/>
-                          </Events>
                         </Component>
                       </SubComponents>
                     </Container>

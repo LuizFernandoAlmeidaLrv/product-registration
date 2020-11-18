@@ -29,8 +29,7 @@ public class PropriedadesBD {
     private final String MYSQL = "MYSQL";
     private final String ORACLE = "ORACLE";
     private String localArquivoPTO;
-
-    private String enderecoWsReceberXML = "192.168.0.43";
+    private String enderecoWsReceberXML = "192.168.0.248";
     private String portaWsReceberXML = "8080";
     private String usuarioWsReceberXML;
     private String senhaWsReceberXML;
